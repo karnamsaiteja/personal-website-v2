@@ -57,8 +57,57 @@ p {
 }
 
 .top-img {
-  width: 25%;
   align-self: flex-end;
+  width: 20%;
+}
+
+.toggle-dark {
+  position: absolute;
+  top: 4rem;
+  left: 10rem;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(-38px);
+}
+.label {
+  background-color: #333;
+  display: flex;
+  border-radius: 50px;
+  height: 32px;
+  width: 72px;
+
+  padding: 5px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.fa-moon {
+  font-size: 2.4rem;
+  color: #f1c40f;
+}
+
+.fa-sun {
+  font-size: 2.4rem;
+  color: #f39c12;
+}
+
+.ball {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  right: 3.8px;
+  transition: transform 0.2s ease-in-out;
 }
 
 .bottom-img {
@@ -83,16 +132,16 @@ p {
 
 .greeting-hello {
   font-size: 3rem;
-  color: #222;
   font-weight: 600;
   letter-spacing: 2px;
   margin-bottom: 1.2rem;
+  color: #222;
 }
 
 .greeting-txt {
   font-size: 2.4rem;
-  color: #222;
   width: 60%;
+  color: #222;
 }
 
 /* SECTION MAIN */
@@ -104,6 +153,7 @@ p {
 .skills {
   /* background-color: #e4f9f5; */
   padding: 6rem;
+  color: #333;
 }
 .skills-row {
   display: flex;
@@ -120,13 +170,13 @@ p {
   align-items: center;
   padding: 4rem;
   border-radius: 16px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
 }
 
 .skill-row:hover {
   transform: scale(1.05);
-  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.07);
 }
 .skill-l-r img {
   grid-column: 1/2;
@@ -148,6 +198,18 @@ p {
 .img-skills {
   max-width: 24rem;
   max-height: 24rem;
+}
+
+.special-link:link,
+.special-link:visited {
+  color: #666;
+  font-weight: 500;
+}
+
+.special-link:hover,
+.special-link:active {
+  color: #999;
+  text-decoration: none;
 }
 
 /*  CTA */
@@ -195,4 +257,16 @@ p {
   color: #aaa;
 }
 
-/*  1248 px */
+/* DARK MODE */
+
+.dark {
+  background-color: #292c35;
+}
+
+.light-txt {
+  color: #f2f2f2;
+}
+
+.dark-bg {
+  background-color: #484e5f;
+}
