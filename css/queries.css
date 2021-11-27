@@ -43,6 +43,10 @@
     grid-row: 2;
     grid-column: 1;
   }
+  .toggle-dark {
+    top: 0.5rem;
+    left: 0.5rem;
+  }
 }
 
 @media (max-width: 33em) {
@@ -56,12 +60,10 @@
     width: 100%;
   }
   .skills {
-    /* background-color: #e4f9f5; */
     padding: 2rem;
   }
 
   .skill-row {
-    background-color: #fff;
     width: 80%;
     /* text-align: center; */
   }
