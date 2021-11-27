@@ -26,8 +26,8 @@ checkbox.addEventListener(`change`, () => {
   dark(`.cta`);
   darkBg(`.footer`);
   lightTxt(`.cta`);
-  document.querySelector(`.heading-cta`).style.color = `#fff`;
-  document.querySelector(`.txt-cta`).style.color = `#fff`;
-  document.querySelector(`h2`).style.color = `#fff`;
+  lightTxt(`.heading-cta`);
+  lightTxt(`.txt-cta`);
+  lightTxt(`h2`);
   document.querySelector(`.copyright`).style.color = `#6b758f`;
 });
