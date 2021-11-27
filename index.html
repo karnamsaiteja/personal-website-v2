@@ -16,6 +16,15 @@
 
     <link href="css/queries.css" type="text/css" rel="stylesheet" />
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- FAVICON -->
     <link rel="icon" href="favicon.ico" />
 
@@ -32,6 +41,15 @@
 
   <body>
     <section class="section-hero">
+      <div class="toggle-dark">
+        <input type="checkbox" class="checkbox" id="checkbox" />
+        <label for="checkbox" class="label">
+          <i class="fa fa-moon"></i>
+          <i class="fa fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+
       <img class="top-img" src="images/main.png" alt="camera-image" />
 
       <div class="content-main">
@@ -57,11 +75,11 @@
           alt="profile"
         />
 
-        <p class="greeting-hello">Hello!</p>
+        <p class="greeting-hello greeting-txt-dark">Hello!</p>
 
-        <p class="greeting-txt">
-          I am Karnam Saiteja...A motion and Graphics Designer... I ❤️ love watching
-          movies and learning new skills.
+        <p class="greeting-txt greeting-txt-dark">
+          I am Karnam Saiteja...A motion and Graphics Designer... I love ❤️
+          watching movies and learning new skills.
         </p>
       </div>
     </main>
@@ -71,8 +89,8 @@
         <h2 class="heading-secondary">My Skills</h2>
       </div>
 
-      <div class="skills-row skill-illustration">
-        <div class="skill-row skill-l-r">
+      <div class="skills-row">
+        <div class="skill-row skill-l-r skill-illustration">
           <img
             class="img-skills"
             src="images/CASTAWAY GIRLpng.png"
@@ -90,7 +108,7 @@
           </div>
         </div>
 
-        <div class="skill-row skill-r-l">
+        <div class="skill-row skill-r-l skill-animation">
           <div class="content">
             <h3>Animation</h3>
             <p>
@@ -107,7 +125,7 @@
             height="400px"
           />
         </div>
-        <div class="skill-row skill-l-r">
+        <div class="skill-row skill-l-r skill-uiux">
           <img
             class="img-skills"
             src="images/ui.png"
@@ -119,7 +137,10 @@
             <h3>UI/UX Designing</h3>
             <p>
               Have you heard the word
-              <a href="https://en.wikipedia.org/wiki/Feng_shui" target="_blank"
+              <a
+                class="special-link"
+                href="https://en.wikipedia.org/wiki/Feng_shui"
+                target="_blank"
                 >'Feng shui'</a
               >? and I like to do it on an interface. The primary tool I use for
               this is Adobe XD.
@@ -127,7 +148,7 @@
           </div>
         </div>
 
-        <div class="skill-row skill-r-l">
+        <div class="skill-row skill-r-l skill-photo">
           <div class="content">
             <h3>Photography</h3>
             <p>
@@ -161,8 +182,11 @@
         Contact Me</a
       >
     </section>
+
     <footer class="footer">
       <p class="copyright">© 2021 karnam saiteja. All Rights Reservered.</p>
     </footer>
+
+    <script src="script/script.js"></script>
   </body>
 </html>
